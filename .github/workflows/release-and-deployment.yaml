@@ -25,5 +25,4 @@ jobs:
           sources: docker-compose.yaml config.sh
           tag: latest
           script: |
-            source config.sh
             docker-compose up -d
