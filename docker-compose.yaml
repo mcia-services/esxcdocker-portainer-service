@@ -6,7 +6,8 @@ services:
     container_name: portainer
     restart: always
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/reverseproxy.sock:/var/run/reverseproxy.sock
       - portainer-data:/data
     ports:
       - 8000:8000
